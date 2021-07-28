@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class JapangiMain implements JapangiInterface {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int inputMoney = Integer.parseInt(sc.nextLine());
+		
+		
+	}
+	//사용자가 금액을 입력하는 메소드
+	@Override
+	public void insertCoin() {
+		// TODO Auto-generated method stub
+		
+	}
+	//목록을 보여줌
+	@Override
+	public void displayDrink() {
+		// TODO Auto-generated method stub
+		
+	}
+	//음료를 선택
+	@Override
+	public void choiceDrink() {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,8 @@
+
+public class Japangi {
+	class drink{
+		int num ;
+		String name;
+		int price;
+	}
+}

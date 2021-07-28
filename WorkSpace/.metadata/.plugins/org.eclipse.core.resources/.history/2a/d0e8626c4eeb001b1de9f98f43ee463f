@@ -1,0 +1,12 @@
+package pack03_Anonymous;
+
+public class Anonymous {
+	ParentClass pc = new ParentClass() {
+		int pcField1;
+		String pcField2;
+		
+
+		
+	};
+	//익명 객체의 생성 
+}

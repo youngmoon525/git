@@ -1,0 +1,23 @@
+package pack07_imp;
+
+public class Japangi implements Japangi_Interface{
+
+	@Override
+	public void insertCoin() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void choiceDrink() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void receiveCoin() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

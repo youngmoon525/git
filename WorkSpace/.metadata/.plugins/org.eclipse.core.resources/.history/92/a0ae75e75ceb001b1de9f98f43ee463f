@@ -1,0 +1,4 @@
+
+public interface JapangiInterface {
+	//사용자 금액 입력
+}

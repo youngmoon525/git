@@ -1,0 +1,15 @@
+package pack06_imp;
+
+public class DaoMain {
+	public static void dbWork(DataAccessObject dao) {
+		dao.select();
+		dao.update();
+		dao.delete();
+		dao.insert();
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

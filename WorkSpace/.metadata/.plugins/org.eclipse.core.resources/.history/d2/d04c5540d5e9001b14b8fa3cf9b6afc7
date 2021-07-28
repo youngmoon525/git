@@ -1,0 +1,9 @@
+package pack03_Interface;
+
+public class MyClassMain {
+	public static void main(String[] args) {
+		System.out.println("1.case");
+		
+		MyClass myClass1 = new MyClass(); //생성자를 이용해서 생성함
+	}
+}

@@ -1,0 +1,6 @@
+package pack06_Override;
+
+//비행기의 기본 기능들을 상속 받음
+public class SuperSonicAirplane extends Airplane{
+
+}

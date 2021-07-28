@@ -1,0 +1,28 @@
+package pack01_List;
+
+import java.util.List;
+import java.util.Vector;
+
+public class Ex03_Vector {
+	public static void main(String[] args) {
+		//사용 빈도 수가 낮은 Vector
+		List<String> list = new Vector<>();
+		list.add("제목1");
+		list.add("제목2");
+		list.add("제목3");
+		list.add("제목4");
+		list.add("제목5");
+		
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+		
+	}//main
+	public class Ex03_Board{
+		String subject;
+		String content;
+		String writer;
+	
+	}//Ex03_Board
+	
+}//Ex03Vector_class

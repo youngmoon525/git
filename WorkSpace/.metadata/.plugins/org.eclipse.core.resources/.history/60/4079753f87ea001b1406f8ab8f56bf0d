@@ -1,0 +1,7 @@
+package pack08_ChangeTP;
+
+public class Child extends Parent{
+	public Child() {
+		System.out.println("생성");
+	}
+}

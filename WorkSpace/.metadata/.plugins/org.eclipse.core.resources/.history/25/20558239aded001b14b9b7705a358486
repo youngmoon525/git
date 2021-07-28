@@ -1,0 +1,7 @@
+package pack01_Thread1;
+
+//자바는 다중상속이 불가능하다.
+
+public class MyThread04 {
+
+}

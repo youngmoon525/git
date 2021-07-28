@@ -1,0 +1,42 @@
+package pack01_List;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
+
+public class Ex03_Vector {
+	public static void main(String[] args) {
+		//사용 빈도 수가 낮은 Vector
+	
+//		List<String> list = new Vector<>();
+//		list.add("제목1");
+//		list.add("제목2");
+//		list.add("제목3");
+//		list.add("제목4");
+//		list.add("제목5");
+//		
+//		for (int i = 0; i < list.size(); i++) {
+//			System.out.println(list.get(i));
+//		}
+		List<Ex03_Board> list = new Vector<>();
+		Ex03_Vector ev = new Ex03_Vector();
+		//인스턴스화
+		list.add(new Ex03_Board("a", "b", "c"));
+		
+	}//main
+	//nastedClass == 중첩클래스 == 인스턴스 멤버
+	public class Ex03_Board{
+		String subject;
+		String content;
+		String writer;
+		public Ex03_Board(String subject, String content, String writer) {
+			this.subject = subject;
+			this.content = content;
+			this.writer = writer;
+		}
+		
+	}//Ex03_Board
+	//Vector 구조를 가지는 List를 만드는데 데이터 타입은 Ex03_Board 
+	//list.add 3건정도 추가해서 출력해보기
+	
+}//Ex03Vector_class

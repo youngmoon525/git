@@ -1,0 +1,37 @@
+package pack11_abs3;
+
+public class EmployeeMain extends EmployeePG {
+//강제해놓은 메소드들의 기능이 전부 끝나면
+//하나의 페이지가 끝났다고 생각함.
+public static void main(String[] args) {
+	EmployeeMain epm = new EmployeeMain();
+	epm.select();
+	epm.update();
+	epm.delete();
+	epm.insert();
+}
+	@Override
+	public void select() {
+		System.out.println("사원 조회 완료");
+		
+	}
+
+	@Override
+	public void update() {
+		System.out.println("사원 수정 완료");
+		
+	}
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void insert() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

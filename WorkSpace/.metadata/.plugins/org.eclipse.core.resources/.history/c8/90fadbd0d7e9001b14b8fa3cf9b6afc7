@@ -1,0 +1,6 @@
+package pack05_imp;
+
+//interface에서의 implement기능상속은 extends를 사용함
+public interface InterfaceC extends {
+	public void methodC();
+}

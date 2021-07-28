@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class JapangiMain3 {
+
+	public static void main(String[] args) {
+		//DB <->JAVA Connection 
+		//DB 음료 ( 음료목록을 가져옴)
+		DrinkDTO[] dtos = new DrinkDTO[3];
+		dtos[0] = new DrinkDTO(800, "콜라");
+		dtos[1] = new DrinkDTO(800, "사이다");
+		dtos[2] = new DrinkDTO(500, "물");
+		
+		
+	}
+	
+}

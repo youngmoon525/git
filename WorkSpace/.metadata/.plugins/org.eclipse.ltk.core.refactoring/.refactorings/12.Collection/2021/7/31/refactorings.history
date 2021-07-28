@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;pack01_List.Ex02_ListMain.java&apos; to &apos;Ex02_BoardMain.java&apos;&#x0D;&#x0A;- Original project: &apos;12.Collection&apos;&#x0D;&#x0A;- Original element: &apos;pack01_List.Ex02_ListMain.java&apos;&#x0D;&#x0A;- Renamed element: &apos;pack01_List.Ex02_BoardMain.java&apos;" description="Rename compilation unit &apos;Ex02_ListMain.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;pack01_List{Ex02_ListMain.java" name="Ex02_BoardMain.java" references="false" stamp="1627271405407" version="1.0"/>
+</session>

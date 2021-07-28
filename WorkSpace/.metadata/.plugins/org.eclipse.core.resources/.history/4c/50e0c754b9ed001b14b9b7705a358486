@@ -1,0 +1,9 @@
+package pack03_Horse;
+
+//말을 세팅할 객체
+public class Horse extends Thread {
+	//말의 이름
+	String name;
+	
+	int meter = 100;
+}

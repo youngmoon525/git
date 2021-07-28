@@ -1,0 +1,5 @@
+package pack07_imp;
+
+public interface Japangi_Interface {
+	public void insertCoin(); 
+}

@@ -1,0 +1,18 @@
+package pack01_Nested;
+
+public class A {
+	//생성자 메소드 A의 
+	int afield ; 
+	public A() {
+		System.out.println("A라는 객체가 생성됨");
+	}
+	//인스턴스 멤버 클래스 
+	public class B{
+		int bfield ; //B의 iv 
+		//B의 생성자 메소드
+		public B() {
+			System.out.println("B 객체가 생성됨");
+		}
+		void method1() {System.out.println("BClass의 메소드 입니다."); }
+	}
+}

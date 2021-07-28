@@ -1,0 +1,5 @@
+package pack10_abs2;
+//추상 클래스는 객체로 만들어서 사용하지 않음
+public abstract class Animal {
+//어떤 동물이든 가질 수 있는 속성들을 정의해서 사용할수있게함
+}

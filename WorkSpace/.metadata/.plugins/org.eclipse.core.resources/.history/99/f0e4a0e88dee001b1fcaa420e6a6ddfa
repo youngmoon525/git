@@ -1,0 +1,10 @@
+package pack04_Japangi;
+//음료의 기능을 모두 기술함(정의함)
+public class DrinkDAO {
+	//void 형태는 return이 없는경우 ex) main메소드에서 메소드를 실행한 결과를 받을 필요가 없는경우
+	
+	//음료의 목록을 보여주는 메소드 
+	public void drinkDisplay(){
+		
+	}
+}

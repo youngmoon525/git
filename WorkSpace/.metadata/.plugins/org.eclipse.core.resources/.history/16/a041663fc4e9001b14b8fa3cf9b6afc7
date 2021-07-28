@@ -1,0 +1,9 @@
+package pack07_protected2;
+
+import pack07_Protected1.A;
+
+public class D extends A{
+	public D() {
+		super();
+	}
+}

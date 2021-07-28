@@ -1,0 +1,13 @@
+package pack09_abs;
+
+public class PhoneMain {
+	public static void main(String[] args) {
+//		Phone ph = new Phone() {
+//		
+//		};
+		SmartPhone sp = new SmartPhone("홍길동"); 
+		System.out.println(sp.owner);
+		sp.turnOn();
+		sp.turnOff();
+	}
+}

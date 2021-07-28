@@ -1,0 +1,5 @@
+package japangi;
+//상태 정보를 가지고있는 객체 
+public class DrinkDTO {
+
+}

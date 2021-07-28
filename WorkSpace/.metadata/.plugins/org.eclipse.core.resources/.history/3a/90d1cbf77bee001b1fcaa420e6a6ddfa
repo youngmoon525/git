@@ -1,0 +1,10 @@
+package pack02_Map;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Ex01_HashSet {
+	public static void main(String[] args) {
+		Set<String> set = new HashSet<String>();
+	}
+}

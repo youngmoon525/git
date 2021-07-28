@@ -1,0 +1,30 @@
+package pack01_Nested;
+
+public class A {
+	//생성자 메소드 A의 
+	int afield ;  //iv
+	static int afield2; //정적 멤버
+	public A() {
+		int aa ; //lv
+		System.out.println("A라는 객체가 생성됨");
+	}
+	//인스턴스 멤버 클래스 
+	public class B{
+		int bfield ; //B의 iv 
+		//B의 생성자 메소드
+		public B() {
+			System.out.println("B 객체가 생성됨");
+		}
+		void method1() {System.out.println("BClass의 메소드 입니다."); }
+	}//class B
+	
+	//정적 멤버 클래스 (static 키워드가 붙었기 때문에 정적 멤버임)
+	public static class C{
+		int cfield;
+		public C() {
+			System.out.println("C 객체가 생성 됨");
+		}
+		void method1() { }
+	}
+	
+}//class A

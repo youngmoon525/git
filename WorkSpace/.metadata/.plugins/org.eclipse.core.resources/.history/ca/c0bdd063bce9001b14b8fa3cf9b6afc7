@@ -1,0 +1,7 @@
+package pack05_Override;
+
+//계산기라는 Class를 별도로 만들고 
+//계산기라는 클래스의 계산하기(method)를 override
+public class Computer {
+
+}

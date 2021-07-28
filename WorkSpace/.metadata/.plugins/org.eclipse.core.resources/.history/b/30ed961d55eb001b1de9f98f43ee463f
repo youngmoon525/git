@@ -1,0 +1,5 @@
+package pack05_Android;
+
+public class AppComatActivity {
+	protected void onCreate() {} ; 
+}

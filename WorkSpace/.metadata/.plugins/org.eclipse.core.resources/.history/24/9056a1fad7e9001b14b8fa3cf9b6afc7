@@ -1,0 +1,23 @@
+package pack05_imp;
+
+public class ImplementAll implements InterfaceC {
+
+	@Override
+	public void methodA() {
+		System.out.println("메소드 A가 실행이됨 (InterfaceA)");
+		
+	}
+
+	@Override
+	public void methodB() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void methodC() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

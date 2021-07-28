@@ -1,0 +1,7 @@
+package pack01_Nested;
+
+public class A {
+	public A() {
+		System.out.println("A라는 객체가 생성됨");
+	}
+}

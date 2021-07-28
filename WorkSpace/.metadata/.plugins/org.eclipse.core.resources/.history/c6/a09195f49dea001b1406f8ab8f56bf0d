@@ -1,0 +1,7 @@
+package pack02_Nested;
+
+public class Amain {
+	public static void main(String[] args) {
+		//인스턴스 맴버의 접근
+	}
+}

@@ -1,0 +1,15 @@
+package pack08_ChangeTP2;
+
+public class ChangeMain {
+	public static void main(String[] args) {
+		//Child 는 Parent + Child 
+		Child ch = new Child();
+		ch.method1();
+		ch.method2();
+		ch.method3();
+		ch.method4();
+		//상속의 일반적인 사용방법
+		
+		//file Stream 
+	}
+}

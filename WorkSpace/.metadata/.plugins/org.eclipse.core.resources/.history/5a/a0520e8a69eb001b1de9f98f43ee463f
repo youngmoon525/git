@@ -1,0 +1,18 @@
+
+public class Test2 {
+	public static void main(String[] args) {
+		methodVoid();
+		methodSelect();
+		
+	}
+	
+	
+	public static void methodVoid() {
+		//리턴이 없는
+		System.out.println("여기서 실행만 하고 끝나는 메소드 입니다.");
+	}
+	
+	public static void methodSelect() {
+		System.out.println("조회를 하고 결과를 받아야 합니다.");
+	}
+}

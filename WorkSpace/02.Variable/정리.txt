@@ -1,0 +1,22 @@
+1.변수(Variable)
+	- 데이터(값 ) 을 저장할 때 사용되는 메모리 기억공간
+	- 데이터를 담는 상자 -> 크기 (Data Type) int,String,double
+	- 기억공간에는 반드시 이름이 있어야한다 -> 변수명
+	- 변수의 이름은 가능하다면 소문자로 시작해서 다른 개발자가
+	알아볼수있는 의미를 가진 이름을 사용하는것이 좋음
+	ex) int price , int c
+	
+2. Data Type(자료형) : 변수의 크기와 저장되는 데이터의 종류를 결정
+	① 기본 자료 형 ( Primitive Data Type )
+		- 정수형 : byte(1) , short(2) ,※ int(4) , long(8)
+		- 실수형 : float(4) , double(8)
+		- 문자형 (단일문자 ) : char(2)
+		- 부울형 (논리형 ) : boolean(1) = true , false (참 ,거짓)
+	② 사용자 정의 자료형 : 참조형 자료(Reference Type ) -> 4byte↗
+		- 클래쓰 타입 class
+		- 인터페이스 타입 interface
+		- 배열(열거) 타입 ※
+		- String Type(Wrapper Class)
+		
+변수 키워드 : 변수 선언 , 할당 , 초기화 , 나열  ,재할당,Casting
+			,	Boxing(parse) 

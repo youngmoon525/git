@@ -1,0 +1,11 @@
+package pack04_InterfaceTP;
+
+public class Bus implements Vehicle{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

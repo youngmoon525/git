@@ -1,0 +1,13 @@
+package pack03_Horse;
+//경마게임의 등수 처리를 위한 객체
+public class Rank {
+	int rank ;  //등수
+	
+	public Rank() {	}
+	
+	//
+	public void finishLine(String name) {
+		
+	}
+
+}

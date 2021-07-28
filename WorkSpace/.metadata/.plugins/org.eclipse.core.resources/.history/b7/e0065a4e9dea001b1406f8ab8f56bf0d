@@ -1,0 +1,9 @@
+package pack02_Nested;
+
+public class A {
+	void method() {
+		String field2 ; //lv 메소드 안에 있기때문
+	}
+	
+	String field = "A의 필드 입니다."; //iv Class의 블럭킹 내부에서 선언됨
+}

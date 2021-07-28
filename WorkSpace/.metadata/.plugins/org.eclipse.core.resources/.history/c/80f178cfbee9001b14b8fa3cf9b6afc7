@@ -1,0 +1,7 @@
+package pack06_Override;
+
+public class Airplane {
+	public void land() {
+		System.out.println("착륙 합니다 .");
+	}
+}

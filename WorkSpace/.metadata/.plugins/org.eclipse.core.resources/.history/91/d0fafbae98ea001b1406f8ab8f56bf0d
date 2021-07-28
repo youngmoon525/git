@@ -1,0 +1,7 @@
+package pack01_Nested;
+
+public class NMain {
+	public static void main(String[] args) {
+		
+	}
+}

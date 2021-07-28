@@ -1,0 +1,11 @@
+package pack01_Nested;
+
+public class NMain {
+	public static void main(String[] args) {
+		A a = new A(); //인스턴스화
+		a.afield = 10; //필드
+		System.out.println(a.afield);
+		//----일반적인 객체 사용 방법
+		//인스턴스 멤버 객체(클래스) 생성 
+	}
+}

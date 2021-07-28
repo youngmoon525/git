@@ -1,0 +1,5 @@
+package pack02_Nested;
+
+public class A {
+	String field = "A의 필드 입니다."; //iv
+}

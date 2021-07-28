@@ -1,0 +1,5 @@
+package pack06_imp;
+//DAO 데이터 베이스에 접근해서 정보를 얻어오는 기능을 수행하는 객체
+public interface DataAccessObject {
+
+}

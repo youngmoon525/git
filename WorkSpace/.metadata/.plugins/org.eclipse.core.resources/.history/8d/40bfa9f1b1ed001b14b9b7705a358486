@@ -1,0 +1,13 @@
+package pack02_Thread2;
+
+import java.awt.Toolkit;
+
+public class Ex02_BeepTask implements Runnable{
+
+	@Override
+	public void run() {
+		Toolkit toolkit = Toolkit.getDefaultToolkit();
+		
+	}
+
+}

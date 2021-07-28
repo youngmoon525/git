@@ -1,0 +1,5 @@
+package pack01_Interface;
+
+public interface TestInterface {
+
+}

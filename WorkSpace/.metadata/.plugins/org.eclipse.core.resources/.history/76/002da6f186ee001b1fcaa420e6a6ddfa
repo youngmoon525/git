@@ -1,0 +1,12 @@
+package pack03_Stack_Queue;
+
+public class StackMain {
+	public static void main(String[] args) {
+		//Coin에 있는 private으로 만든 value를 
+		//접근해서 출력하시오.
+		//Coin coin = new Coin();
+		Coin coin = new Coin();
+		coin.setValue(10);
+		System.out.println(coin.getValue());
+	}
+}

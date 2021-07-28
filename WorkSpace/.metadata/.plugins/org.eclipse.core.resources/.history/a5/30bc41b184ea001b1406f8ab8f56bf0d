@@ -1,0 +1,6 @@
+package pack07_imp;
+
+public interface Japangi_Interface {
+	public void insertCoin(); //추상메소드
+	public void choiceDrink(); 
+}

@@ -1,0 +1,9 @@
+package japangi;
+
+public class Jmain {
+	public static void main(String[] args) {
+		System.out.println("음료를 선택하세요");
+		System.out.println("1.콜라(800) 2.사이다(500) 3.물"); //초보자 
+		//int , String 한계 한가지 타입밖에 못담는다 .
+	}
+}

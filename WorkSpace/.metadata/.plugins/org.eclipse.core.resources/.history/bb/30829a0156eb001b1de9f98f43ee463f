@@ -1,0 +1,9 @@
+package pack05_Android;
+
+public class MainActivity extends AppComatActivity{
+
+	@Override
+	protected void onCreate() {
+
+	}
+}

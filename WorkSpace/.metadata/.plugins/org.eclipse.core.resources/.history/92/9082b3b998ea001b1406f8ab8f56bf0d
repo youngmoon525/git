@@ -1,0 +1,9 @@
+package pack01_Nested;
+
+public class NMain {
+	public static void main(String[] args) {
+		A a = new A(); //인스턴스화
+		a.afield = 10; //필드
+		System.out.println(a.afield);
+	}
+}

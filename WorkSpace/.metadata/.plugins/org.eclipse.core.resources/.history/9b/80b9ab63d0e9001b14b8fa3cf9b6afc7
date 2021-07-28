@@ -1,0 +1,5 @@
+package pack02_Interface;
+//인터페이스를 사용하려면  
+public class Audio implements RemoteControl{
+
+}

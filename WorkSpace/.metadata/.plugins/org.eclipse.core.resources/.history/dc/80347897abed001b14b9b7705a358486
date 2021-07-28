@@ -1,0 +1,13 @@
+package pack01_Thread1;
+//하나의 작업 (MyThread03.java)라는 작업을 동시에 실행되게 함
+public class Thread03Main {
+	public static void main(String[] args) {
+		MyThread03 thread01 = new MyThread03();
+		MyThread03 thread02 = new MyThread03();
+		MyThread03 thread03 = new MyThread03();
+		
+		thread01.start();
+		thread02.start();
+		thread03.start();
+	}
+}

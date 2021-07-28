@@ -1,0 +1,6 @@
+package pack07_imp;
+
+public class DrinkDTO {
+	int price;
+	String name;
+}

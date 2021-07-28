@@ -1,0 +1,7 @@
+package pack02_Thread2;
+
+public class Ex01_Thread {
+	public static void main(String[] args) {
+		//윈도우의 소리를 Toolkit lib 사용할수가있다.
+	}
+}

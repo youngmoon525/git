@@ -1,0 +1,24 @@
+
+//DAO<- implement 받아야 하는곳
+//
+public class DrinkDAO implements JapangiInterface{
+
+	@Override
+	public int getInt(String msg) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void displayDrink(DrinkDTO[] drinkDTOs) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void choiceDrink() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+
+//상태 정보만 가지고 있는 클래스 
+//
+public class DrinkDTO {
+	int price ; //가격을 담아놓을 필드
+	String name ; // 이름을 담아놓을 필드
+	//생성자를 따로 만들지 않으면 java에서 빈 깡통 생성자를 지원해줌
+//	String company ;
+//	String yymmdd ; 
+}

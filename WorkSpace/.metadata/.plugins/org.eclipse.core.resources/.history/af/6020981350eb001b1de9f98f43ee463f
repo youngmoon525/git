@@ -1,0 +1,5 @@
+package pack04_Anonymous;
+
+public interface RemoteControl {
+	public void turnOn();//전원을 킨다.
+}

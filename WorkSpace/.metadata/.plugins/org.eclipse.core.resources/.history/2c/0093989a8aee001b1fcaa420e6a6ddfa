@@ -1,0 +1,37 @@
+package pack03_Stack_Queue;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class StackMain {
+	public static void main(String[] args) {
+		//Coin에 있는 private으로 만든 value를 
+		//접근해서 출력하시오.
+		//Coin coin = new Coin();
+		//error ->?Coin coin = new Coin();
+		
+		//Stack 자료구조 
+		Stack<Coin> stackCoin = new Stack<Coin>();
+		//push라는 메소드를 이용해 데이터를 삽입
+		stackCoin.push(new Coin(100));
+		stackCoin.push(new Coin(50));
+		stackCoin.push(new Coin(500));
+		stackCoin.push(new Coin(10));
+		//LIFO = Last In First Out
+		//후입선출 = 마지막에 들어온 데이터가 제일 먼저 나감
+		//Stack Push기능을 통해 데이터를 삽입하고 Pop기능을 통해 데이터를 뽑아온다.
+		//ex)프링글스 
+		while(!stackCoin.isEmpty()) {
+			Coin coin = stackCoin.pop(); 
+			System.out.println("꺼내온 동전 : " + coin.getValue() + "원");
+		}
+		
+		//Que는 LinkedList를 사용함 
+		//FIFO = First In First Out
+		Queue<Coin> queueCoin = new LinkedList<Coin>();
+		//
+		
+		
+	}
+}

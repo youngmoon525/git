@@ -1,0 +1,5 @@
+package pack06_imp;
+
+public class OracleDAO implements DataAccessObject{
+
+}

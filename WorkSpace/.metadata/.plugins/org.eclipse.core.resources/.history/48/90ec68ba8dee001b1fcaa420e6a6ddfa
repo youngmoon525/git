@@ -1,0 +1,5 @@
+package pack04_Japangi;
+//음료의 기능
+public class DrinkDAO {
+
+}

@@ -1,0 +1,9 @@
+package pack02_Thread2;
+
+public class Ex05Main {
+	public static void main(String[] args) {
+		Ex05_Thread thread01 = new Ex05_Thread();
+		Ex05_Thread thread02 = new Ex05_Thread();
+		Ex05_Thread thread03 = new Ex05_Thread();
+	}
+}

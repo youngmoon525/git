@@ -1,0 +1,7 @@
+package pack01_List;
+
+public class Ex01_List {
+	public static void main(String[] args) {
+		//배열의 단점
+	}
+}

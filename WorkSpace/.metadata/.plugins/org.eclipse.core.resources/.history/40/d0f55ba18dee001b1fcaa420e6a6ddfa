@@ -1,0 +1,16 @@
+package pack04_Japangi;
+
+import java.util.ArrayList;
+
+
+public class JMain {
+	public static void main(String[] args) {
+		//ArrayList를 사용
+		//List<DrinkDTO> list = new ArrayList<DrinkDTO>();
+		//List의 하위에 존재하는 List자료구조들을 살펴봄 
+		ArrayList<DrinkDTO> list = new ArrayList<DrinkDTO>();
+		list.add(new DrinkDTO("콜라", 800, "코카콜라"));
+		list.add(new DrinkDTO("삼다수", -1, "삼다수"));
+		list.add(new DrinkDTO("사이다", 700, "칠성"));
+	}
+}

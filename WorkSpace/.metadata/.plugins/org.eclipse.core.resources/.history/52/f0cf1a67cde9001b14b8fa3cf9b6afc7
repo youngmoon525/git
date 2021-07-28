@@ -1,0 +1,9 @@
+package pack11_abs3;
+
+//사원관리 프로그램 
+//abstract - 어떤 기능들을 사용을 꼭 해야되는지를 강제 함
+//사원 조회 , 사원 정보 수정 , 사원 정보 삭제 , 사원 정보 추가 
+// CRUD -Oracle -Spring 
+public class EmployeePG {
+
+}

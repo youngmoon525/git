@@ -1,0 +1,9 @@
+package pack04_Japangi;
+//음료의 상태정보를 저장하기 위한 객체 
+public class DrinkDTO {
+	private String name ; //음료의 이름
+	private int price ; //음료의 가격
+	private String company ; //제조사 
+	
+
+}

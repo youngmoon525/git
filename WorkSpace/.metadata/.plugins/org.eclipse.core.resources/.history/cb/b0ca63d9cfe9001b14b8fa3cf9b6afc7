@@ -1,0 +1,7 @@
+package pack02_Interface;
+
+public interface RemoteControl {
+
+	//추상 메소드
+	
+}

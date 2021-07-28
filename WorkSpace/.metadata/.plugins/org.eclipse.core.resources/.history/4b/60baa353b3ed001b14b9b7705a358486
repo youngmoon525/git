@@ -1,0 +1,15 @@
+package pack02_Thread2;
+
+public class Ex03_Thread {
+	public static void main(String[] args) {
+		Thread thread = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				for (int i = 0; i < 5; i++) {
+					
+				}
+			}
+		});
+	}
+}

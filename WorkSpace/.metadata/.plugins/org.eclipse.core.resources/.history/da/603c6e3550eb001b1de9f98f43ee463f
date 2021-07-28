@@ -1,0 +1,5 @@
+package pack04_Anonymous;
+
+public class Anonymous {
+	//필드 초기값으로 InterFace를 대입
+}

@@ -1,0 +1,8 @@
+package pack03_Anonymous;
+
+public class Amain {
+	public static void main(String[] args) {
+		Anonymous anonymous = new Anonymous();
+		anonymous.pc.pMethod();
+	}
+}

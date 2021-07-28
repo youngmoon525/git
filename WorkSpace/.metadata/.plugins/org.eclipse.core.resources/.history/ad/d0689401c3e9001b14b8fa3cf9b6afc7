@@ -1,0 +1,8 @@
+package pack07_Protected1;
+
+public class B {
+	public void method() {
+		A a = new A();//인스턴스화 됨
+		a.field = "value"; //필드 접근도 됨
+	}
+}

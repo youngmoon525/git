@@ -1,0 +1,5 @@
+package pack02_Thread2;
+
+public class Ex04_ThreadA extends Thread {
+	//생성자 메소드 
+}

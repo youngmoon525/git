@@ -1,0 +1,10 @@
+package pack04_Anonymous;
+
+public class Amain {
+	public static void main(String[] args) {
+		Anonymous anonymous = new Anonymous();
+		//익명 객체 필드 사용
+		anonymous.field.turnOn();
+		anonymous.field.turnOff();
+	}
+}

@@ -1,0 +1,19 @@
+
+public class Amain {
+	public static void main(String[] args) {
+		A a = new A();// a를 객체 화함
+		a.a1 = 1;
+		a.a2 = 2; 
+		System.out.println(a.a1);
+		System.out.println(a.a2);
+		
+		A.a3 = 3;
+		System.out.println(A.a3);
+		
+		a.voidmethod();
+		
+//		String aa = a.rtnStr();// aa라는 변수에 값을 담아야함 
+//		System.out.println(aa);
+		
+	}
+}

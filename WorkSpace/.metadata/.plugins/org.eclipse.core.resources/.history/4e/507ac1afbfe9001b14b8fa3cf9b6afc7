@@ -1,0 +1,15 @@
+package pack06_Override;
+
+public class AirMain {
+	public static void main(String[] args) {
+		Airplane ap = new Airplane();
+		ap.land();
+		ap.fly();
+		ap.takeOff();
+		SuperSonicAirplane ssa = new SuperSonicAirplane();
+		ssa.flyMode = SuperSonicAirplane.SUPERSONIC; 
+		ssa.land();
+		ssa.fly();
+		ssa.takeOff();
+	}
+}

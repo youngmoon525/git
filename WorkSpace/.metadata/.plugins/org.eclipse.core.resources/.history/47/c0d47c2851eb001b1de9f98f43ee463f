@@ -1,0 +1,22 @@
+package pack04_Anonymous;
+
+public class Anonymous {
+	// 필드 초기값으로 InterFace를 대입
+	RemoteControl field = new RemoteControl() {
+	//tv의 채널을 바꾸는 기능을 넣고싶다.
+		public void changeCh() {//<--- 
+			System.out.println("tv의 채널을 바꿉니다.");
+		}
+		@Override
+		public void turnOn() {
+			System.out.println("TV를 켭니다.");
+			changeCh();//부모로 부터 물려받은 (재정의) 메소드에서 호출
+		}
+
+		@Override
+		public void turnOff() {
+			System.out.println("TV를 끕니다.");
+
+		}
+	};
+}

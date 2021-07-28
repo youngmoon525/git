@@ -1,0 +1,11 @@
+
+public interface JapangiInterface {
+	//사용자 금액 입력
+	//음료의 목록을 보여줌
+	//음료를 선택
+	//잔돈 배출
+	public void insertCoin(); //1.사용자가 금액을 입력하게끔
+	public void displayDrink(DrinkDTO[] drinkDTOs); //2.음료의 목록을 보여줌
+	public void choiceDrink(); //3.음료를 선택
+	
+}

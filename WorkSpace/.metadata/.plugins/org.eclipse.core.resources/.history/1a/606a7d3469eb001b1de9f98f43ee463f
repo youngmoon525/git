@@ -1,0 +1,11 @@
+
+public class Test2 {
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public void methodVoid() {
+		//리턴이 없는
+	}
+}

@@ -1,0 +1,21 @@
+package pack05_Android;
+
+public class MainActivity extends AppComatActivity{
+
+	@Override
+	protected void onCreate() {
+		Button btn_send = new Button(); //객체 생성은 정상적으로 됨
+		btn_send.setOnclickListener(new Button.OnClickListner() {
+			
+			@Override
+			public void onClick() {
+				System.out.println("메세지를 전송하거나 어떤 버튼을 클릭했을때의 처리");
+			}
+		});
+	}
+	
+	public static void main(String[] args) {
+		MainActivity main = new MainActivity();
+		main.onCreate();
+	}
+}

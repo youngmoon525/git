@@ -1,0 +1,9 @@
+package pack01_Thread1;
+
+public class Thread03Main {
+	public static void main(String[] args) {
+		MyThread03 thread01 = new MyThread03();
+		MyThread03 thread02 = new MyThread03();
+		MyThread03 thread03 = new MyThread03();
+	}
+}

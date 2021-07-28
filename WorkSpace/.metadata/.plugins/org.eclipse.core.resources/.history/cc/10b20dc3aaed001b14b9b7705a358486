@@ -1,0 +1,9 @@
+package pack01_Thread1;
+
+public class MyThread01Main {
+	public static void main(String[] args) {
+		//객체 생성
+		MyThread01 myThread01 = new MyThread01();
+		myThread01.start();
+	}
+}

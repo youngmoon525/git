@@ -1,0 +1,8 @@
+package pack10_abs2;
+
+public class AnimalMain {
+	public static void main(String[] args) {
+		Cat cat = new Cat();
+		cat.sound(); //
+	}
+}

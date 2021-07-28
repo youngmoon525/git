@@ -1,0 +1,13 @@
+package pack07_imp;
+
+public class DrinkDTO {
+	int price;
+	String name;
+	public DrinkDTO(int price, String name) {
+		super();
+		this.price = price;
+		this.name = name;
+	}
+	
+	
+}

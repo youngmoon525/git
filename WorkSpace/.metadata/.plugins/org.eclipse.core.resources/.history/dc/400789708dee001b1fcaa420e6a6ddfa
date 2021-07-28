@@ -1,0 +1,12 @@
+package pack04_Japangi;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class JMain {
+	public static void main(String[] args) {
+		//ArrayList를 사용
+		//List<DrinkDTO> list = new ArrayList<DrinkDTO>();
+		ArrayList<DrinkDTO> list = new ArrayList<DrinkDTO>();
+	}
+}

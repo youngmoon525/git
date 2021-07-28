@@ -1,0 +1,11 @@
+
+public class Japangi {
+	class DrinkDTO{
+		int num ;
+		String name;
+		int price;
+		public DrinkDTO() {
+			// TODO Auto-generated constructor stub
+		}
+	}
+}

@@ -1,0 +1,9 @@
+package pack09_abs;
+
+public class PhoneMain {
+	public static void main(String[] args) {
+//		Phone ph = new Phone() {
+//		
+//		};
+	}
+}

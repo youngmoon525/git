@@ -1,0 +1,11 @@
+package pack10_abs2;
+
+public class Cat extends Animal{
+
+	@Override
+	public void sound() {
+		
+		
+	}
+	
+}

@@ -1,0 +1,16 @@
+package pack03_Interface;
+
+public class MyClass {
+	//
+	//멤버로 만듬
+	RemoteControl rc = new Television();
+	
+	public MyClass() {
+
+	}
+	
+	public MyClass(RemoteControl rc) {
+
+	}
+	
+}

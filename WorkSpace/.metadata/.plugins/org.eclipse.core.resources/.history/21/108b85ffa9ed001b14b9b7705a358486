@@ -1,0 +1,5 @@
+package pack01_Thread1;
+//Thread(쓰레드) : 동시작업
+public class MyThread01 {
+
+}

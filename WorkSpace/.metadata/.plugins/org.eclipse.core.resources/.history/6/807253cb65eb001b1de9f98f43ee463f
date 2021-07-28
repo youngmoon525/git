@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class JapangiMain3 {
+
+	public static void main(String[] args) {
+		DrinkDTO[] dtos = new DrinkDTO[3];
+		
+		
+	}
+	
+}

@@ -1,0 +1,22 @@
+package pack07_imp;
+
+public class Japangi2 implements Japangi_Interface{
+
+	@Override
+	public void insertCoin() {
+	
+		
+	}
+
+	@Override
+	public void choiceDrink() {
+		//dao.choiceDrink		
+	}
+
+	@Override
+	public void receiveCoin() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

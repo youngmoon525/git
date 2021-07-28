@@ -1,0 +1,7 @@
+
+public class Test {
+	public static void main(String[] args) {
+		JapangiMain2 jp = new JapangiMain2();
+		jp.japangiStrat();
+	}
+}

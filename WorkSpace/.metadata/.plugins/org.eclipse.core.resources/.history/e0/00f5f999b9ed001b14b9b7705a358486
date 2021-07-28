@@ -1,0 +1,23 @@
+package pack03_Horse;
+
+//말을 세팅할 객체
+public class Horse extends Thread {
+	//말의 이름
+	String name;
+	//총길이
+	int meter = 100;
+	
+	//등수를 매길수 있는  int형 변수
+	static int count = 1;
+	
+	public Horse() {	} //생성자 메소드 빈 깡통
+	
+	public Horse(String name) {
+		this.name = name;
+	}
+	//실제 말이 달리거나 하는 처리를 넣을 Thread의 run메소드 
+	@Override
+	public void run() {
+		
+	}
+}

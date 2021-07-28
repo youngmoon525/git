@@ -1,0 +1,30 @@
+package pack11_abs3;
+
+public class EmployeeMain extends EmployeePG {
+//강제해놓은 메소드들의 기능이 전부 끝나면
+//하나의 페이지가 끝났다고 생각함.
+	@Override
+	public void select() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void insert() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

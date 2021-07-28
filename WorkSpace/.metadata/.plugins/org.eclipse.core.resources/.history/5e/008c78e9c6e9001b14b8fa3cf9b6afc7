@@ -1,0 +1,5 @@
+package pack09_abs;
+//abstract 
+public class Phone {
+
+}

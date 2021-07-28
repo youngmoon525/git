@@ -1,0 +1,5 @@
+package pack06_Override;
+
+public class SuperSonicAirplane extends Airplane{
+
+}

@@ -1,0 +1,9 @@
+package pack01_Interface;
+
+
+//java에서의 일반적인 상속은 다중상속이 불가능하다. 
+//Interface를 사용하게 되면 다중상속이 가능하다.
+//Interface <=> implements 키워드를 사용해서 상속을 받음
+public class InterfaceMain implements TestInterface  {
+
+}

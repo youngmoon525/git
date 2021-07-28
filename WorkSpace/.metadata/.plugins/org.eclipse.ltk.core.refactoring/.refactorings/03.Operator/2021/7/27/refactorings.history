@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Ex06_OperTrueFalse.java&apos; to &apos;03.Operator/src/pack01_operator&apos;&#x0D;&#x0A;- Original project: &apos;03.Operator&apos;&#x0D;&#x0A;- Destination element: &apos;03.Operator/src/pack01_operator&apos;&#x0D;&#x0A;- Original element: &apos;pack01_operator.Ex06_OperTrueFalse.java&apos;" description="Copy compilation unit" destination="/src&lt;pack01_operator" element1="/src&lt;pack01_operator{Ex06_OperTrueFalse.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1625108084027" units="1" version="1.0"/>
+</session>

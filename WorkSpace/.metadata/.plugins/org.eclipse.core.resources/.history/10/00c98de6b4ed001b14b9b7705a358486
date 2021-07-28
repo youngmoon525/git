@@ -1,0 +1,8 @@
+package pack02_Thread2;
+
+public class Ex04Main {
+	public static void main(String[] args) {
+		//메인 쓰레드의 이름을 출력해보기
+		Thread mainThread = Thread.currentThread(); //지금 동작중인 쓰레드
+	}
+}

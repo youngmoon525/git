@@ -1,0 +1,6 @@
+
+public class Amain {
+	public static void main(String[] args) {
+		A a = new A();// a를 객체 화함
+	}
+}

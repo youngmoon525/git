@@ -1,0 +1,6 @@
+package pack03_Interface;
+
+public class MyClass {
+	//
+	RemoteControl rc = new Television();
+}

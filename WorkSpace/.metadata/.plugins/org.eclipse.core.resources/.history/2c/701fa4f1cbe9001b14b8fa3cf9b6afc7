@@ -1,0 +1,11 @@
+package pack10_abs2;
+
+public class AnimalMain {
+	public static void main(String[] args) {
+		Cat cat = new Cat();
+		cat.sound(); //
+		cat.breathe();
+		
+		//Animal이라는 SuperClass(설계만가능한)
+	}
+}

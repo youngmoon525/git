@@ -1,0 +1,12 @@
+package pack01_List;
+
+import java.util.List;
+import java.util.Vector;
+
+public class Ex03_Vector {
+	public static void main(String[] args) {
+		//사용 빈도 수가 낮은 Vector
+		List<String> list = new Vector<>(); 
+		
+	}
+}

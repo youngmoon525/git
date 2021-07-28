@@ -1,0 +1,9 @@
+package pack01_Thread1;
+
+//자바는 다중상속이 불가능하다.
+//이미 다른 클래스를 상속받은 상태에서 Thread를 상속 받을수가없다.▶ 문제 발생
+//extend Japangi , Thread -x
+
+public class MyThread04 {
+
+}

@@ -1,0 +1,13 @@
+package pack10_abs2;
+
+public class Cat extends Animal{
+
+	
+	//Animal이라는 부모클래스에서 강제해놓은 메소드를 일단은 재정의 해놓아야함
+	@Override
+	public void sound() {
+		
+		
+	}
+	
+}

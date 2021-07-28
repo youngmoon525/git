@@ -1,0 +1,5 @@
+package pack05_imp;
+
+public interface InterfaceA {
+
+}
