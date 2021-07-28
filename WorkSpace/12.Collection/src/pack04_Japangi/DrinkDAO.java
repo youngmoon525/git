@@ -24,7 +24,7 @@ public class DrinkDAO {
 		//
 	}
 	//메소드의 정의
-	public static int rtnInt() {
+	public int rtnInt() {
 		Scanner sc = new Scanner(System.in);
 		while (true) {
 			System.out.println("숫자를 입력하세요");
