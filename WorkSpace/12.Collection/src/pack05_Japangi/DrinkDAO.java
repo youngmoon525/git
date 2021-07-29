@@ -39,8 +39,8 @@ public class DrinkDAO {
 		//반복해서 옳은 값이 나올때까지 입력을 유도해야함
 		Scanner sc = new Scanner(System.in);
 		String rtnStr = "";
-		while (true) {
-			System.out.println("적어도 한글자 이상의 문자를 입력해주세요.");
+		System.out.println("문자를 입력해주세요.");
+		while (true) {		
 			rtnStr = sc.nextLine();
 			//trim으로 공백문자를 제거 
 			if (rtnStr.trim().length() > 0) {
@@ -54,16 +54,17 @@ public class DrinkDAO {
 	public int rtnInt() {
 		Scanner sc = new Scanner(System.in);
 		int rtni =0; 
+		System.out.println("숫자를 입력해주세요.");
 		while (true) {
 			//try Catch
 			try {
-				System.out.println("숫자를 입력해주세요.");
+				
 				 rtni = Integer.parseInt(sc.nextLine()); ///pass nextint()
 				 return rtni; 
 				//에러가 발생 안하면 int 
 				//발생 하면 String 
 			} catch (Exception e) {
-		
+				System.out.println("다시 숫자를 입력 해주세요 ");
 			}
 			
 		}

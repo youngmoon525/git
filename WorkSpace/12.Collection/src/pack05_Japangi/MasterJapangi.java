@@ -11,8 +11,8 @@ public class MasterJapangi {
 		//프로그램에서 사용할수있게만듬.
 		DrinkDAO dao = new DrinkDAO();
 		dao.display(list);
-		String inputData = dao.rtnString();
-		if (inputData.equals("1")) {
+		
+
 			System.out.println("관리자 모드 ");
 			//음료의 추가 수정 삭제 조회
 			//CRUD
@@ -23,7 +23,7 @@ public class MasterJapangi {
 			
 			//1.데이터의 추가(음료추가) 
 			System.out.println("1.음료 추가 2.음료 삭제 3. 음료 수정 4.음료 다시보기");
-			inputData = dao.rtnString();
+			String inputData = dao.rtnString();
 			if(inputData.equals("1")) {
 				//음료 추가 로직을 구현 
 				System.out.println("음료 추가 로직 시작");
@@ -56,8 +56,9 @@ public class MasterJapangi {
 				list.get(dao.rtnInt()-1 ).setName(dao.rtnString() );
 				dao.display(list);
 				//..반복 처리 
+			}else if(inputData.equals("4")) {
+				dao.display(list);
 			}
-		}//관리자 모드 
 		return list;
 	}
 }

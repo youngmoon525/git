@@ -14,8 +14,13 @@ public class UserJapangi {
 		coin = dao.rtnInt();
 
 		System.out.println("음료를 선택해 주세요.");
-
-		coin = coin - list.get(dao.rtnInt() - 1).getPrice();
+		int num = dao.rtnInt() - 1 ;
+		if(coin >= list.get( num).getPrice()) {
+			//입력한 금액이 음료의 금액보다 같거나 크면 출력 아니면 잔돈을 배출하고 프로그램종료(UserJapangi)
+			coin = coin - list.get( num).getPrice();
+		}else {
+			System.out.println("돈을 다시 입력하세요 잔돈을 배출 합니다.");
+		}
 		System.out.println("잔돈" + coin);
 
 		// 반복되는 코드를 찾는다. => 메소드로 나누고
