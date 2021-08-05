@@ -7,9 +7,23 @@ public class BookDTO {
 	private String author;
 	private String company;
 	private int price ;
+	private int cnt ; //도서의 재고 
 	
 	
-	
+	public int getCnt() {
+		return cnt;
+	}
+	public void setCnt(int cnt) {
+		this.cnt = cnt;
+	}
+	public BookDTO(String name, String author, String company, int price, int cnt) {
+		super();
+		this.name = name;
+		this.author = author;
+		this.company = company;
+		this.price = price;
+		this.cnt = cnt;
+	}
 	public BookDTO(String name, String author, String company, int price) {
 		super();
 		this.name = name;
