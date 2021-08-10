@@ -90,5 +90,57 @@ public class MemberDAO {
 		
 	}
 
+	public MemberDTO checkNum(int num) {
+		conn = getConn(); //1.getConn
+		String sql = "select * from tblMember where num = ? ";
+		MemberDTO dto = null ;
+		//String sql = "select * from tblMember where num = " + num ;
+		try {
+			ps = conn.prepareStatement(sql); //2.전송객체
+			ps.setInt(1, num); //매개변수 값을 전송객체에 추가해서 같이 보냄
+			rs = ps.executeQuery(); //전송객체가 sql문을 실행하고 결과를 가져옴
+			while(rs.next()) {
+				dto = new MemberDTO(rs.getInt("num"),
+						rs.getString("name"),
+						rs.getInt("age"),
+						rs.getString("addr"),
+						rs.getString("tel")
+						);
+			}
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("DAO - CheckNum()Method Error ! ");
+		}finally {
+			dbClose();
+		}
+		return dto; 
+	}
+
+	public void insertMember(MemberDTO dto) {
+		conn = getConn();
+		String sql = "insert into tblMember values (? , ? , ? , ? , ? )";
+		//String sql = "insert into tblMember (num , name , age , addr , tel)";
+		//sql += "values (? , ? , ? ) ";
+		//Insert, Update , Delete 를 통해서 데이터의 조작이 일어나고 
+		//데이터의 조작이 일어났을때는 결과값은 int형을 return해준다. 
+		int succ = 0;
+		try {
+			ps = conn.prepareStatement(sql);
+			ps.setInt(1, dto.getNum());
+			ps.setString(2, dto.getName());
+			ps.setInt(3, dto.getAge());
+			ps.setString(4, dto.getAddr());
+			ps.setString(5, dto.getTel());
+			succ  = ps.executeUpdate();//데이터를 조작하고 그결과를 return해줌
+			System.out.println(succ);
+			//ojdbc 사용해서 insert, update , delete작업을 하면 auto commit;
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("insertMember() Exception");
+		}
+	}
+
 
 }
