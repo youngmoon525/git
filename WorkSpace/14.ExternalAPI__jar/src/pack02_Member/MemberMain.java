@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class MemberMain {
 	public static void menuDisplay() {
 		System.out.println("======== 사용자 관리 ========");
-		System.out.println("1.회원정보 입력 : I ");
-		System.out.println("2.회원정보 삭제 : D ");
-		System.out.println("3.회원정보 수정 : U ");
+		System.out.println("1.회원정보 입력 : I ※");
+		System.out.println("2.회원정보 삭제 : D ※");
+		System.out.println("3.회원정보 수정 : U ※");
 		System.out.println("4.회원정보 검색 : S ※");
-		System.out.println("5.회원주소 검색 : A ");
+		System.out.println("5.회원주소 검색 : A ※");
 		System.out.println("6.회원이름 검색 : N ");
 		System.out.println("7.전화번호 검색 : T ");
 		System.out.println("8.프로그램 종료  : E ");
