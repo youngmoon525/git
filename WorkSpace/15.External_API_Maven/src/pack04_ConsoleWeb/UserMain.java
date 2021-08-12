@@ -24,19 +24,19 @@ public class UserMain {
 	}
 
 	public static void userMenu(int flag) {
-		
+
 		System.out.println("======== 사용자 모드 ========");
-		if(flag == 0) {
+		if (flag == 0) {
 			System.out.println("1.회원 가입 : 1 ");
 			System.out.println("2.로그인 : 2 ");
 			System.out.println("3.비밀번호찾기 : 3 ");
 			System.out.println("5.프로그램 종료  : 5 ");
-		}else if(flag == 1) {
+		} else if (flag == 1) {
 			System.out.println("1.로그아웃 : 1");
 			System.out.println("2.회원정보 수정 : 2 ");
 			System.out.println("5.프로그램 종료  : 5 ");
 		}
-		
+
 	}
 
 	public static void main(String[] args) {
@@ -55,20 +55,31 @@ public class UserMain {
 				menu = sc.nextLine();
 				if (menu.equals("1")) {
 					System.out.println("회원가입");
-					//1.아이디는 반드시 입력하되 중복되는 아이디인지 먼저 체크
-					//dao.idCheck() ;
+					// 1.아이디는 반드시 입력하되 중복되는 아이디인지 먼저 체크
+
+					String id = sc.nextLine();
+					String pw = "";
+					int idCnt = dao.idCheck(id);
+					if (idCnt != 0) {
+						System.out.println("사용중인 아이디 입니다.");
+					} else {
+						pw = sc.nextLine();
+						if (pw.length() < 4) {
+							System.out.println("패스워드를 길게 입력해야 됩니다.");
+						}
+					}
 					
-					//2.아이디와 패스워드는 반드시 4글자 이상 공백을 허용안함.
-					
-					//dao.userJoin() ;
-					
+					// 2.아이디와 패스워드는 반드시 4글자 이상 공백을 허용안함.
+					UserDTO joinDTO = new UserDTO(id, pw, sc.nextLine(), sc.nextLine(), sc.nextLine())	;
+					dao.userJoin(joinDTO) ;
+
 				} else if (menu.equals("2")) {
 					System.out.println("아이디를 입력하세요.▶");
 					String id = sc.nextLine();
 					System.out.println("비밀번호를 입력하세요.▶");
 					String pw = sc.nextLine();
 					dto = dao.userLogin(id, pw);
-					if(dto == null) {
+					if (dto == null) {
 						System.out.println("아이디 비밀번호를 잘못입력함!!!!!");
 					}
 					System.out.println("==");
@@ -78,7 +89,7 @@ public class UserMain {
 					System.out.println("종료");
 					break;
 				}
-			}else {
+			} else {
 				System.out.println("로그인 되었습니다.");
 				userMenu(1);
 				menu = sc.nextLine();
@@ -88,14 +99,13 @@ public class UserMain {
 					dto = null;
 				} else if (menu.equals("2")) {
 					System.out.println("회원정보 수정");
-				}else if (menu.equals("5")) {
+				} else if (menu.equals("5")) {
 					System.out.println("종료");
 					break;
 				}
-				
-			}
-		}//while
 
+			}
+		} // while
 
 	}
 }
