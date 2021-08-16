@@ -1,0 +1,36 @@
+CREATE TABLE TBL_JAVA_PRODUCT
+(
+  NUM NUMBER NOT NULL 
+, NAME VARCHAR2(50)
+, COMPANY VARCHAR2(50) 
+, PRICE NUMBER
+, QTY NUMBER
+, CONSTRAINT TBL_JAVA_PRODUCT PRIMARY KEY 
+  (
+    NUM 
+  )
+  ENABLE 
+);
+
+
+SELECT * from TBL_JAVA_PRODUCT;
+SELECT * from TBL_JAVA_USER;
+
+INSERT INTO TBL_JAVA_USER
+VALUES( 'admin' , 'admin' , '관리자' , 'Y' , 'admin@naver.com' , 0);
+
+INSERT INTO TBL_JAVA_USER
+VALUES( 'user1' , 'user1' , '사용자' , 'N' , 'user1@naver.com' , 100000);
+
+INSERT INTO TBL_JAVA_PRODUCT
+VALUES( 1 , '혼자 공부하는 자바' , '한빛미디어' ,30000,5);
+INSERT INTO TBL_JAVA_PRODUCT
+VALUES( 2 , '같이 공부하는 자바' , '한울' ,10000,0);
+
+commit;
+
+SELECT * FROM tbl_java_user
+where id = 'admin'
+and pw ='admin'
+
+select max(num)+1 from TBL_JAVA_PRODUCT ;
