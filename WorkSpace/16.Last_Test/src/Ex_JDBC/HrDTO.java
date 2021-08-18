@@ -14,6 +14,10 @@ public class HrDTO {
 	private int commission_pct;
 	private int manager_id;
 	private int department_id;
+	
+	public HrDTO() {
+		
+	}
 	public HrDTO(int employee_id, String first_name, String last_name, String email, String phone_number,
 			Date hire_date, String job_id, int salary, int commission_pct, int manager_id, int department_id) {
 		super();

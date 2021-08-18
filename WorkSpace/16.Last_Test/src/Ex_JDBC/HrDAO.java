@@ -66,8 +66,7 @@ public class HrDAO {
 
 	public ArrayList<HrDTO> empSelectAll() {
 		conn = getConn();
-		String sql = "select * from EMPLOYEES   WHERE   salary >= 10000 " + 
-				"AND    salary <= 15000 "; // 실제 DB에서 작동할 쿼리문
+		String sql = "select * from EMP_COPY  order by  EMPLOYEE_ID  asc "; // 실제 DB에서 작동할 쿼리문
 		ArrayList<HrDTO> list = new ArrayList<>();
 		try {
 			ps = conn.prepareStatement(sql);
@@ -160,4 +159,57 @@ public class HrDAO {
 			System.out.println(dto.getDepartment_id() + "\t" + dto.getDepartment_name() + "\t" + dto.getLocation_id());
 		}
 	}
+
+	public int selectEmpID() {
+		conn = getConn();
+		String sql = "SELECT MAX(EMPLOYEE_ID)+1 as maxemp " + 
+				       "FROM EMP_COPY " ;
+		int empid = 0;
+		try {
+			ps = conn.prepareStatement(sql);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				empid = rs.getInt("maxemp");
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			System.out.println("에러");
+		}finally {
+			System.out.println("DB를 닫아줌.rs->ps->conn");
+			dbClose();
+		}
+		return empid ;
+	}
+
+	public int insertEmp(HrDTO dto) {
+		conn = getConn();
+		String sql = "INSERT INTO EMP_COPY " + 
+					  "VALUES ( ? , ?, ? , ?, ? , sysdate , ? , ? , 0.12 , ? , ? ) " ;
+					 //"VALUES ( 208 , 'f','l' , 'e','p' , null , 'j' , 1 , 0.123, 3 , 4 );" ;
+		int result = 0;
+		try {
+			ps = conn.prepareStatement(sql);
+			ps.setInt(1, dto.getEmployee_id());
+			ps.setString(2, dto.getFirst_name());
+			ps.setString(3, dto.getLast_name());
+			ps.setString(4, dto.getEmail());
+			ps.setString(5, dto.getPhone_number());
+			//ps.setDate(6, dto.getHire_date());
+			ps.setString(6, dto.getJob_id());
+			ps.setInt(7, dto.getSalary());
+			//ps.setInt(8, dto.getCommission_pct());
+			ps.setInt(8, dto.getManager_id());
+			ps.setInt(9, dto.getDepartment_id());
+			result = ps.executeUpdate();
+			System.out.println(result);
+		}catch (Exception e) {
+			System.out.println(e.getStackTrace() );
+			System.out.println(e.getMessage());
+		}
+		
+		
+		return 0;
+	}
+	
+	
 }
