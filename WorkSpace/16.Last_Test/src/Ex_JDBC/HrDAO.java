@@ -66,7 +66,8 @@ public class HrDAO {
 
 	public ArrayList<HrDTO> empSelectAll() {
 		conn = getConn();
-		String sql = "select * from EMPLOYEES "; // 실제 DB에서 작동할 쿼리문
+		String sql = "select * from EMPLOYEES   WHERE   salary >= 10000 " + 
+				"AND    salary <= 15000 "; // 실제 DB에서 작동할 쿼리문
 		ArrayList<HrDTO> list = new ArrayList<>();
 		try {
 			ps = conn.prepareStatement(sql);
@@ -128,4 +129,35 @@ public class HrDAO {
 		}
 	}
 	
+	public ArrayList<DpDTO> depSelectAll() {
+		conn = getConn();
+		String sql = "select * from DEPARTMENTS "; // 실제 DB에서 작동할 쿼리문
+		ArrayList<DpDTO> list = new ArrayList<>();
+		try {
+			ps = conn.prepareStatement(sql);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				list.add( new DpDTO(rs.getInt("DEPARTMENT_ID")
+						, rs.getString("DEPARTMENT_NAME")
+						, rs.getInt("manager_id"),
+						rs.getInt("location_id"))
+						);
+				
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			System.out.println("에러");
+		}finally {
+			System.out.println("DB를 닫아줌.rs->ps->conn");
+			dbClose();
+		}
+		return list;
+	}
+	
+	
+	public void displaydp(ArrayList<DpDTO> list) {
+		for (DpDTO dto : list) {
+			System.out.println(dto.getDepartment_id() + "\t" + dto.getDepartment_name() + "\t" + dto.getLocation_id());
+		}
+	}
 }
