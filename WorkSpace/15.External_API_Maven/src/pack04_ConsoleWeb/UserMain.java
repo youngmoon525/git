@@ -71,7 +71,7 @@ public class UserMain {
 					
 					// 2.아이디와 패스워드는 반드시 4글자 이상 공백을 허용안함.
 					UserDTO joinDTO = new UserDTO(id, pw, sc.nextLine(), sc.nextLine(), sc.nextLine())	;
-					dao.userJoin(joinDTO) ;
+					dao.userJoin(joinDTO) ;//<
 
 				} else if (menu.equals("2")) {
 					System.out.println("아이디를 입력하세요.▶");

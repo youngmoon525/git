@@ -28,6 +28,7 @@
 	</build>
 
 	<dependencies>
+		<!--OJDBC  -->
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc6</artifactId>
@@ -38,6 +39,12 @@
 			<groupId>net.nurigo</groupId>
 			<artifactId>javaSDK</artifactId>
 			<version>2.2</version>
+		</dependency>
+		<!-- 이메일 전송을 위한 API -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-email</artifactId>
+			<version>1.5</version>
 		</dependency>
 	</dependencies>
 
