@@ -1,0 +1,13 @@
+
+public class CircleEx {
+	public static void main(String[] args) {
+		int[] arr = {
+				50,100,-70,20,25,80,255,42,-100,72	
+		};
+		int max = 0 ;
+		int min = 0 ;
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+}

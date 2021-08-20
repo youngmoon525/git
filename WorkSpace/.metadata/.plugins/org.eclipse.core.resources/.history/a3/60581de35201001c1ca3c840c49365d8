@@ -1,0 +1,36 @@
+package pack05_Data.go;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.jsoup.Jsoup;
+
+public class JsonParser {
+	public static void main(String[] args) {
+		//json = key , value로 나누어진 데이터 자료 구조.
+		//{  ,  } 중괄호 안에서 표현되고 , 대괄호 [ , ]는 하나의 Value 
+		//중괄호는 우리가 사용하는 객체(DTO)같은 개념으로 이해를하면되고.
+		//대괄호는 List,Array의 개념으로 이해를 하면 된다.
+		//page=1&perPage=10&serviceKey=C%2Bs6aUnodQBsE9joWNITkbdNay8YjJkk%2BbBPEHHuPr63PvQcSd3PIPeYiH3aKgyOYMJQzI0RSm%2BLpIISoE03Sg%3D%3D
+		//1.연결 
+		String url = "https://api.odcloud.kr/api/3082925/v1/uddi:7c291067-a956-4811-a9ec-942b6979ff77_201709270816";
+		//?=&=&=
+		try {
+			String jsonData = Jsoup.connect(url)
+					.data("page" , "1")
+					.data("perPage", "10")
+					.data("serviceKey", "C%2Bs6aUnodQBsE9joWNITkbdNay8YjJkk%2BbBPEHHuPr63PvQcSd3PIPeYiH3aKgyOYMJQzI0RSm%2BLpIISoE03Sg%3D%3D")
+					.timeout(3000)
+					.userAgent("Chrome")
+					.ignoreContentType(true)
+					.execute()
+					.body();
+		}catch (Exception e) {
+			System.out.println("J에러?");
+			System.out.println(e.getMessage());
+			System.out.println(e.getStackTrace());
+		}
+		
+		JSONParser jsonParser = new JSONParser();//JSONDATA 파싱을위한 객체
+		JSONObject jsonObject ;
+	}
+}

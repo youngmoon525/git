@@ -1,0 +1,7 @@
+package pack05_Data.go;
+
+public class JsonParser {
+	public static void main(String[] args) {
+		//json = key , value로 나누어진 데이터 자료 구조.
+	}
+}

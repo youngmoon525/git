@@ -1,0 +1,9 @@
+
+public class ProductDTO {
+	private int num;//상품번호
+	private String name;//상품명
+	private String company;//회사
+	private int price;//가격
+	private int qty;//재고
+	
+}

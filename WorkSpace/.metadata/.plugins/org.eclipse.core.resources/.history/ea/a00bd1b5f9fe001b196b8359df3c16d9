@@ -1,0 +1,7 @@
+package Ex_Method;
+
+public class UserDTO {
+	private String userName;
+	private String id;
+	private String pw;
+}

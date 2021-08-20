@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class TestMain {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("상품 관리 프로그램 ▶");
+		System.out.println("아이디를 입력 해주세요 .▷");
+		String id = sc.nextLine();
+		System.out.println("비밀번호를 입력 해주세요.▷");
+		String pw = sc.nextLine();
+		//DB에 접속해서 로그인 처리를 한다.
+		UserDAO dao = new UserDAO();
+		UserDTO dto = dao.userLogin(id, pw);
+		if(dto == null) {
+			System.out.println("아이디와 비밀번호를 확인해주세요");
+		}
+	}
+}

@@ -1,0 +1,20 @@
+package Ex_JDBC;
+
+public class UserDTO {
+	String ID      ;
+	String PW      ;
+	String NAME    ;
+	String ADMIN   ;
+	String EMAIL   ;
+	String MONEY   ;
+	public UserDTO(String iD, String pW, String nAME, String aDMIN, String eMAIL, String mONEY) {
+		ID = iD;
+		PW = pW;
+		NAME = nAME;
+		ADMIN = aDMIN;
+		EMAIL = eMAIL;
+		MONEY = mONEY;
+	}
+	
+	
+}

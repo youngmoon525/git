@@ -1,0 +1,13 @@
+package pack03_SendMail;
+
+import java.util.ArrayList;
+
+public class MailMain {
+	public static void main(String[] args) {
+		ArrayList<MailDTO> mailList = new ArrayList<>();
+		ma
+		SendMail sm = new SendMail();
+		//sm.sendSimple();
+		sm.sendAttach();
+	}
+}

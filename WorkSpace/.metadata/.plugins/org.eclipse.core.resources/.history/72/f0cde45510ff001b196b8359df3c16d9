@@ -1,0 +1,8 @@
+package Ex_JDBC;
+
+public class Testd {
+	public static void main(String[] args) {
+		UserDTO dto = new UserDTO("a", "b", "c", "d", "e", "f");
+		
+	}
+}

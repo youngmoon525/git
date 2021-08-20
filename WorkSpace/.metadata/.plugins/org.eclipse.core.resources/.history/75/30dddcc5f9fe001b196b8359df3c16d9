@@ -1,0 +1,8 @@
+package Ex_Method;
+
+public class UserDTO {
+	private String userName;//사용자의 이름
+	private String id; //사용자의 아이디
+	private String pw; //사용자의 비밀번호
+	private int age;   //사용자의 나이
+}

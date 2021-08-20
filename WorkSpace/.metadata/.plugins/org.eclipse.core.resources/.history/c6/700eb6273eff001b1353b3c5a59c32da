@@ -1,0 +1,8 @@
+
+public class CircleEx {
+	public static void main(String[] args) {
+		Circle circle = new Circle();
+		circle.ban = 5;
+		System.out.println(circle.one());
+	}
+}

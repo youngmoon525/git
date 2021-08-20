@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MasterMode {
+	public void displayMenu() {
+		System.out.println("1.상품검색");
+		System.out.println("2.상품추가");
+		System.out.println("3.상품삭제");
+		System.out.println("4.재고관리");
+		System.out.println("5.로그아웃");
+		
+	}
+	
+	
+	public void masterStart() {
+		//상품 목록을 전체 출력 DTO , DAO
+		ProductDAO dao = new ProductDAO();
+		ArrayList<ProductDTO> list = dao.allProductSelect();
+		dao.displayProduct(list);
+		displayMenu();
+		Scanner sc= new Scanner(System.in);
+		String menu =  sc.nextLine();
+		if(menu.equalsIgnoreCase("1")) {
+			System.out.println("1.상품 검색 로직");
+				System.out.println("1-1.상품 이름으로 검색");
+				System.out.println("1-2.상품 회사로 검색");
+				menu = sc.nextLine();
+				String inputData = null;
+				if(menu.equalsIgnoreCase("1")) {
+					System.out.println("상품 이름을 입력해주세요. ▶");
+					inputData = sc.nextLine();
+					dao.displayProduct( dao.selectProduct(inputData , "name") );
+				}else if(menu.equalsIgnoreCase("2")) {
+					System.out.println("상품 회사을 입력해주세요. ▶");
+					inputData = sc.nextLine();
+					dao.displayProduct( dao.selectProduct(inputData , "company") );
+				} //상품 검색 로직까지 완료 . 
+				
+		}else if(menu.equalsIgnoreCase("2")) {
+			System.out.println("2.상품 추가 로직");
+			//상품 추가 시 번호가 key값이므로 중복되지 않게끔 처리
+			System.out.println("상품 번호를 입력해주세요▶");
+		}else if(menu.equalsIgnoreCase("3")) {
+			System.out.println("3.상품 삭제 로직");
+		}else if(menu.equalsIgnoreCase("4")) {
+			System.out.println("4.상품 재고 관리");
+		}else if(menu.equalsIgnoreCase("5")) {
+			System.out.println("5.로그아웃");
+		}
+	}
+}

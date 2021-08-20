@@ -1,0 +1,6 @@
+package pack03_SendMail;
+
+public class MailDTO {
+	private String email;
+	private String msg;
+}

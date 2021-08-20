@@ -1,0 +1,8 @@
+
+public class Child_Class extends Prent_Class {
+	@Override
+	public void prent_method() {
+		// TODO Auto-generated method stub
+		super.prent_method();
+	}
+}

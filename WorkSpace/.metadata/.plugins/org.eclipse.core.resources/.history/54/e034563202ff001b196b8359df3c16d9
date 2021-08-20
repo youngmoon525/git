@@ -1,0 +1,7 @@
+package Ex_Method;
+
+public class Ex03_Method {
+	public static void main(String[] args) {
+		
+	}
+}

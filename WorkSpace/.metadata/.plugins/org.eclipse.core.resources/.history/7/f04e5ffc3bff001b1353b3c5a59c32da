@@ -1,0 +1,14 @@
+
+public class Max {
+	public static void main(String[] args) {
+		int num1 = 152;
+		int num2 = 173;
+		
+		if(num1 > num2) {
+			int max = num1;
+		}else {
+			int max = num2;
+		}
+		System.out.println(max);
+	}
+}

@@ -1,0 +1,10 @@
+package pack04_ConsoleWeb;
+
+import pack02_Member.MemberDAO;
+
+public class affa {
+	public static void main(String[] args) {
+		MemberDAO aa = =  new MemberDAO();
+		UserDAO dao = new UserDAO(dao);
+	}
+}

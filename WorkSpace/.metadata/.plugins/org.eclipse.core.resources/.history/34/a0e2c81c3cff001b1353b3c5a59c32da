@@ -1,0 +1,14 @@
+
+public class Max {
+	public static void main(String[] args) {
+		int num1 = 152;
+		int num2 = 173;
+		
+		if(num1 > num2) {
+			int max = num1; // if (조건) { 지역변수 }
+		}else {
+			int max = num2;
+		}
+
+	}
+}

@@ -1,0 +1,10 @@
+
+public class Circle {
+	int ban ;
+	public Circle(int ban) {
+		this.ban = ban;
+	}
+	public int one() {
+		
+	}
+}

@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class UserMode {
+	private void displayMenu() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void userStart() {
+		ProductDAO dao = new ProductDAO();
+		ArrayList<ProductDTO> list = dao.allProductSelect();
+		dao.displayProduct(list);
+		displayMenu();
+	}
+
+	
+}

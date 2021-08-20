@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class UserMode {
+	public void userStart() {
+		ProductDAO dao = new ProductDAO();
+		ArrayList<ProductDTO> list = dao.allProductSelect();
+		dao.displayProduct(list);
+		displayMenu();
+	}
+}

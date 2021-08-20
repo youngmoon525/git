@@ -1,0 +1,13 @@
+package Ex_Method;
+
+public class Ex02_Method {
+	public static void main(String[] args) {
+//		String userName = "자기이름";
+//		String id = "id";
+//		String pw = "pw";
+//		int age = 100;
+		
+//		UserDTO dto = new UserDTO(userName, id, pw, age);
+		//변수를 만들어서 UserDTO를 객체화 시키는 방법
+	}
+}

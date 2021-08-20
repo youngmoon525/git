@@ -1,0 +1,9 @@
+
+public class ProductDTO {
+	private int num;
+	private String name;
+	private String company;
+	private int price;
+	private int qty;
+	
+}

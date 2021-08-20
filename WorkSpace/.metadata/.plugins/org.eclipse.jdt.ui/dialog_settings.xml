@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\admin\Desktop" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>
@@ -25,9 +25,9 @@
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="531" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
-		<item value="682" key="DIALOG_HEIGHT"/>
-		<item value="774" key="DIALOG_X_ORIGIN"/>
-		<item value="237" key="DIALOG_Y_ORIGIN"/>
+		<item value="671" key="DIALOG_HEIGHT"/>
+		<item value="675" key="DIALOG_X_ORIGIN"/>
+		<item value="44" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
@@ -45,9 +45,9 @@
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item value="540" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
-		<item value="696" key="DIALOG_HEIGHT"/>
+		<item value="680" key="DIALOG_HEIGHT"/>
 		<item value="441" key="DIALOG_X_ORIGIN"/>
-		<item value="231" key="DIALOG_Y_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="DialogBounds_GenerateToStringDialog">
 		<item value="516" key="DIALOG_WIDTH"/>
@@ -81,6 +81,11 @@
 		<item value="627" key="DIALOG_HEIGHT"/>
 		<item value="703" key="DIALOG_X_ORIGIN"/>
 		<item value="110" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="3" key="index"/>
+	</section>
+	<section name="OccurrencesSearchResultPage">
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>

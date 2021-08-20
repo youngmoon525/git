@@ -1,0 +1,25 @@
+package Ex_Method;
+
+public class Ex02_Method {
+	public static void main(String[] args) {
+//		String userName = "자기이름";
+//		String id = "id";
+//		String pw = "pw";
+//		int age = 100;
+		
+//		UserDTO dto = new UserDTO(userName, id, pw, age);
+		//변수를 만들어서 UserDTO를 객체화 시키는 방법
+		
+		//변수를 사용하지 않고(안만들고) UserDTO를 객체화 시키는 방법
+		UserDTO dto = new UserDTO("자기이름", "id", "pw", 100);
+		System.out.println(dto.getUserName());
+		//String userName = "바뀐이름";
+		dto.setUserName("바뀐이름");
+		System.out.println(dto.getUserName());
+	}
+	
+	public UserDTO rtnDTO() {
+		//dto 또는 레퍼런스타입의 기본형태 null
+		
+	}
+}

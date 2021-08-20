@@ -1,0 +1,7 @@
+
+public class TestMain {
+	public static void main(String[] args) {
+		System.out.println("상품 관리 프로그램 ▶");
+		
+	}
+}

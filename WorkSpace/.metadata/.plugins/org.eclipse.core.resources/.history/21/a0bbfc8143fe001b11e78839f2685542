@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class UserMode {
+	private void displayMenu() {
+		System.out.println("1.금액 입력");
+		System.out.println("2.상품 주문");
+		System.out.println("3.로그 아웃");
+	}
+	
+	public void userStart() {
+		ProductDAO dao = new ProductDAO();
+		ArrayList<ProductDTO> list = dao.allProductSelect();
+		dao.displayProduct(list);
+		displayMenu();
+		
+		String menu =  Common.rtnString("메뉴를 선택해주세요.");
+		if(menu.equalsIgnoreCase("1")) {
+			
+		}
+	}
+
+	
+}

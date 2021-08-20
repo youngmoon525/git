@@ -1,0 +1,12 @@
+package Ex_Method;
+
+public class Ex02_Method {
+	public static void main(String[] args) {
+		String userName = "자기이름";
+		String id = "id";
+		String pw = "pw";
+		int age = 100;
+		
+		UserDTO dto = new UserDTO(userName, id, pw, age)
+	}
+}

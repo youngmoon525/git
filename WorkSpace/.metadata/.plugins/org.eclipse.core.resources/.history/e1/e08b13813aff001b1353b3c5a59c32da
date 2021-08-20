@@ -1,0 +1,7 @@
+
+public class pTest {
+	public static void main(String[] args) {
+		Car car = new Car();
+		//객체화 시키는 방법은 new 라는 키워드를 통해서..
+	}
+}

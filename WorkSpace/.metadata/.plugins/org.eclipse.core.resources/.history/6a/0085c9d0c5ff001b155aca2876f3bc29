@@ -1,0 +1,16 @@
+package Ex_JDBC;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class HrMain {
+	public static void main(String[] args) {
+		System.out.println("HR 테이블 조회 프로그램 입니다.");
+		HrDAO dao = new HrDAO();
+		Scanner sc = new Scanner(System.in);
+		String inputData = sc.nextLine();
+		if()
+		ArrayList<HrDTO> list =  dao.empSelectAll();
+		dao.displayEmp(list);
+	}
+}

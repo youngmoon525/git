@@ -1,0 +1,24 @@
+package Ex_Method;
+
+import java.util.ArrayList;
+
+public class Ex03_Method {
+	public static void main(String[] args) {
+		ArrayList<UserDTO> list = rtnList();
+		//UserDTO dto = list.get(0);
+		for (int i = 0 ; i < list.size(); i ++) {
+			System.out.println(list.get(i).getUserName());
+		}
+	}
+	
+	//public static<=> 메소드타입(ArrayList) 메소드명
+	public static ArrayList<UserDTO> rtnList(){ //==ArrayList<UserDTO> 
+		ArrayList<UserDTO> list = new ArrayList<>();
+		//UserDTO dto = new UserDTO("Name", "id", "pw", 10);
+		list.add(new UserDTO("Name", "id", "pw", 10));
+		list.add(new UserDTO("Name1", "id1", "pw1", 10));
+		list.add(new UserDTO("Name2", "id2", "pw2", 10));
+		list.add(new UserDTO("Name3", "id3", "pw3", 10));
+		return list;
+	}
+}

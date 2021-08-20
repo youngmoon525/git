@@ -1,0 +1,13 @@
+package Ex_JDBC;
+
+public class UserDTO {
+	private String ID      ;
+	private String PW      ;
+	private String NAME    ;
+	private String ADMIN   ;
+	private String EMAIL   ;
+	private String MONEY   ;
+	
+
+	
+}
